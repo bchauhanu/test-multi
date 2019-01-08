@@ -1,0 +1,22 @@
+.product-gallery {
+    #panel {
+        margin-bottom: 24px;
+        
+        img {
+            border: @contentmenu-border 2px solid;
+        }
+        
+        div {
+            display:none;
+            
+            &.show {
+                display: block;
+            }
+        }
+    }
+    #thumbs img, #largeImage {
+    cursor: pointer;
+    }
+    
+    #thumbs img {margin-right: 2px;}  
+}

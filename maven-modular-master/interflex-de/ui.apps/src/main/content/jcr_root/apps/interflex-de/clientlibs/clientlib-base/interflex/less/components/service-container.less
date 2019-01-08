@@ -1,0 +1,104 @@
+.service-container {
+  margin: 0 auto;
+  max-width: @content-width;
+  padding-bottom: 50px;
+ /* padding-top: 50px;*/
+
+  .column-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .image-media {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 5px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    display: table;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  .if-button {
+    margin-top: 10px;
+    min-width: 163px;
+  }
+}
+
+.service-column {
+  color: @interflex-white;
+  padding: @grid-gutter-width;
+  text-align: center;
+
+  h2 {
+    margin: 20px 0 20px 0;
+    .roboto(24px, @interflex-black, normal, none);
+  }
+
+  p {
+    margin-bottom: 10px;
+    .roboto(14px, inherit, 350, normal);
+  }
+
+  .grey-landing &,
+  .color-regular_grey & {
+    color: @interflex-black;
+  }
+
+  .newsItem {
+
+    &:last-of-type {
+      margin-bottom: 10px;
+    }
+
+    .newsDate {
+      color: black;
+      font-style: italic;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.serviceColumn {
+  .make-xs-column(12);
+  .make-sm-column(4);
+  border-left: 1px solid @interflex-white;
+
+  &:first-child {
+    border-left: none;
+  }
+}
+
+// Alter colors for grey landing page
+
+
+.grey-landing,
+.color-regular_grey,
+.grey-content {
+  .serviceColumn {
+    border-color: @interflex-grey-light;
+  }
+
+  .if-button {
+    border-color: @interflex-grey-light;
+    color: @interflex-black;
+
+    &:hover {
+      color: @interflex-grey-dark-content;
+    }
+  }
+
+  .service-column {
+    h1,
+    p {
+      color: @interflex-black;
+    }
+  }
+}

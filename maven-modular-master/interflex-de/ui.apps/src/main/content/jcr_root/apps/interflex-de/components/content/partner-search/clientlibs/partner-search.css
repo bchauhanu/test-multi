@@ -1,0 +1,44 @@
+h4 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #005ea8;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.btn-danger-text {
+  color: #bd362f;
+}
+
+.btn-danger-text:hover,
+.btn-danger-text:active,
+.btn-danger-text.active,
+.btn-danger-text.disabled,
+.btn-danger-text[disabled] {
+  color: #bd362f;
+  *color: #a9302a;
+}
+
+.btn-danger-text:active,
+.btn-danger-text.active {
+  color: #942a25 \9;
+}
+
+.component-partner-search {
+	min-height: 500px;
+}
+.search-results {
+	margin: 0 auto;
+    max-width: 1030px;
+}
+.search-results .no-results {
+	font-size: 20px; 
+	text-align: center;
+}
+
+.search-results .error-msg {
+	font-size: 20px; 
+	text-align: center;
+}

@@ -1,0 +1,70 @@
+.article {
+  margin-bottom: 50px;
+  margin-top: 30px;
+
+  h2 {
+    .roboto(28px, @heading-color, normal);
+    margin-bottom: 10px;
+	margin-top:10px;
+  }
+
+  h1 {
+    .roboto(28px, @heading-color, normal);
+    margin-bottom: 10px;
+	margin-top:10px;
+  }
+
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .image-caption {
+    font-size: 12px;
+    margin-top: 12px;
+    text-align: center;
+  }
+  
+	.blueText {
+	  margin: 0px;
+	  color: #0c5ba5;
+	}
+
+	.newsemailborder {
+		border-bottom:1px solid black;
+		padding-top:10px;
+	}
+
+  .image {
+    margin-bottom: 45px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
+  .contact {
+    border-top: 1px solid black;
+    margin-top: 78px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &.one-column {
+    .images {
+      float: right;
+    }
+
+    .simple-downloads {
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      margin-top: 0;
+    }
+  }
+}

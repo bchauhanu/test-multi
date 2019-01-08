@@ -1,0 +1,54 @@
+<!--Edit Mode Place Holder Text-->
+<div data-sly-test="${(wcmmode.edit || wcmmode.design)}" class="cq-placeholder" data-emptytext="Edit ${component.title} Component"></div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='partner'}"/>
+
+<div class="col-xs-offset-1 col-md-offset-0 col-xs-10 col-md-8 content">
+   <div class="search-results">
+      <ul class="results-list">
+         <li class="highlight row">
+            <div class="partner partnerDetails parbase">
+               <div class="partner-data">
+                  <div class="col-sm-4 image"><img src="${properties.fileReference}.thumb.319.319.png" alt="${properties.alt}" class="cq-dd-image"></div>
+                  <div class="col-sm-8">
+                     <h4>
+                        ${properties.name}
+                     </h4>
+                     <div class="description">
+                        <p> ${properties.description @ context='html'}</p>
+                     </div>
+                     <div class="contact">
+                        <strong>Contact:</strong>
+                        <div class="line name">
+                           <i class="fa fa-user"></i>
+                           ${properties.contactName}
+                        </div>
+                        <div class="line address">
+                           <i class="fa fa-home"></i>
+                           ${properties.contactAddress}
+                        </div>
+                        <div class="line phone">
+                           <i class="fa fa-phone"></i>
+                           ${properties.contactPhone}
+                        </div>
+                        <div class="line phone">
+                           <i class="fa fa-print"></i>
+                           ${properties.faxNumber}
+                        </div>
+                        <div class="line email">
+                           <i class="fa fa-envelope"></i>
+                           ${properties.contactEmail}
+                        </div>
+                        <div class="line www">
+                           <i class="fa fa-globe"></i>
+                           ${properties.contactURL}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+   </div>
+</div>

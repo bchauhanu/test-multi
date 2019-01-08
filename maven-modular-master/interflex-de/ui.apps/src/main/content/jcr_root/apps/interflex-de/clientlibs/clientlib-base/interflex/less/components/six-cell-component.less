@@ -1,0 +1,118 @@
+.six-cell-component {
+  background: none;
+
+  .hover-text {
+    display: none;
+    padding: 0;
+  }
+
+  .cell-button {
+    border: solid 2px white;
+    height: 275px;
+
+    a.div-link {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      text-decoration: none;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .button-row {
+      height: 100%;
+    }
+
+    .button-icon {
+      height: 65px;
+      margin-top: 20px;
+    }
+
+    &:hover {
+      .button-icon,
+      .button-link {
+        display: none;
+      }
+
+      .hover-text {
+        display: table;
+        .roboto(15px, black, 400);
+        height: 100%;
+        padding: 15px;
+        text-align: center;
+
+        p {
+          display: table-cell;
+          margin: 0;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &.heading-blue {
+      background: @interflex-background;
+
+      &:hover {
+        background-color: @interflex-background-main;
+      }
+
+      .link-title {
+        color: #337ab7;
+      }
+    }
+
+    &.grey-light {
+      background: @interflex-grey-light;
+
+      &:hover {
+        background-color: @interflex-grey-landing;
+      }
+
+      .link-title {
+        .roboto(20px, @interflex-white, 400);
+      }
+    }
+
+    &.blue {
+      &:hover {
+        background-color: @interflex-blue;
+      }
+
+      .link-title {
+        .roboto(20px, @interflex-white);
+      }
+    }
+
+    &.low {
+      height: 90px;
+
+      .button-link {
+        background-position: 20px 53%;
+        text-align: left;
+      }
+
+      .link-title {
+        padding-left: 80px;
+        padding-top: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .button-link {
+    background: no-repeat center 65%;
+    display: table;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+
+    .link-title {
+      .roboto(20px, @interflex-white, 400);
+      display: table-cell;
+      letter-spacing: 2px;
+      padding-top: 30px;
+      text-transform: uppercase;
+    }
+  }
+}

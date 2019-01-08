@@ -1,0 +1,59 @@
+.billboard {
+  .container {
+    background: no-repeat right top;
+    max-width: @screen-lg-min;
+    min-height: 525px;
+    padding: 0;
+  }
+
+  .caption {
+    .roboto(14px, @interflex-black, normal, none);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 15px;
+    background: url(img/caption-text-bg.png) repeat;
+  }
+
+  h2 {
+    .roboto(30px, @interflex-grey-light, normal, none);
+    margin-top: 8px;
+  }
+
+  h1 {
+    .roboto(24px, @interflex-grey-light, normal, none);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .picture {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+
+  &.no-text {
+    .container {
+      min-height: initial;
+    }
+
+    img {
+      display: block;
+      float: right;
+      max-width: 1200px;
+      width: 100%;
+    }
+  }
+
+  &.blue-light {
+    h2 {
+      color: @interflex-blue;
+    }
+  }
+}

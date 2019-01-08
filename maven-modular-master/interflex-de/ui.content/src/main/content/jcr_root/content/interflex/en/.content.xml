@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-07-04T16:27:17.664+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/interflex/settings/wcm/templates/interflex-language-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
+        sling:resourceType="interflex/components/structure/page">
+        <root jcr:primaryType="nt:unstructured">
+            <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="allegion-core/components/structure/header/header">
+                <mainNavigation
+                    jcr:lastModified="{Date}2018-07-04T15:26:16.893+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="allegion-core/components/structure/header/navigation"
+                    optlevel="onelevel">
+                    <navigation jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            pagelink="/content/interflex/en"/>
+                    </navigation>
+                </mainNavigation>
+                <topNavigation
+                    jcr:lastModified="{Date}2018-07-04T15:26:35.799+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="allegion-core/components/structure/header/topnavigation">
+                    <topnavigation jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            pagelink="https://www.interflex.de/en/header/contact.html"
+                            pagetitle="Contact"/>
+                         <item1
+                            jcr:primaryType="nt:unstructured"
+                            pagelink="https://www.interflex.de/en/header/downloads.html"
+                            pagetitle="Downloads / Videos"/>
+                    </topnavigation>
+                </topNavigation>
+            </header>
+            <footer
+                jcr:lastModified="{Date}2018-07-04T16:27:17.659+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="allegion-core/components/structure/footer">
+                <linklist jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linktitle="Data Protection"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linktitle="Cookie Policy"/>
+                </linklist>
+            </footer>
+        </root>
+        <image/>
+    </jcr:content>
+</jcr:root>

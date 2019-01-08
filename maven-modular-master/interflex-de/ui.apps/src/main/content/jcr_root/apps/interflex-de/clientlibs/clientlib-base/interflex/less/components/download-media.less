@@ -1,0 +1,73 @@
+.downloads {
+  padding-top: 10px;
+}
+
+.download-icon {
+  background: url(img/download-icon-interflex.png) no-repeat center center;
+  background-size: contain;
+  height: 60px;
+  margin-top: 8px;
+
+  a {
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.pdf {
+  background: url(img/pdf-download.png) no-repeat center;
+  height: 60px;
+  margin-top: 8px;
+}
+
+.avi {
+  background: url(img/avi-download.png) no-repeat center;
+  height: 60px;
+  margin-top: 8px;
+}
+
+.downloader {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.download-info {
+  border-bottom: 1px solid @interflex-grey-dark-content;
+  display: table-cell;
+  height: 100%;
+  padding-bottom: 10px;
+  vertical-align: middle;
+
+  h4 {
+    .roboto(16px, @interflex-blue, 500, normal);
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    padding-top: 0;
+  }
+
+  span {
+    .roboto(12px, @interflex-grey, 500, normal);
+    letter-spacing: 1px;
+  }
+}
+
+.scrollable-content {
+  border: solid 1px @interflex-grey;
+  height: 318px;
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+
+  .images {
+    display: block;
+    margin: 0 auto 25px;
+  }
+}

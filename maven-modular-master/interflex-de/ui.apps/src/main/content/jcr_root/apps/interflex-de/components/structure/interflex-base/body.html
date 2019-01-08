@@ -1,0 +1,38 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2016 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<!--/* Header */-->
+<sly data-sly-test.headerPath="${inheritedPageProperties.configPagePath}/jcr:content/root/header">
+	<sly data-sly-use.header="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=headerPath}">
+		<sly data-sly-test="${header.validResource}">
+			<sly data-sly-resource="${headerPath @ wcmmode='disabled'}"></sly>
+		</sly>
+	</sly>
+</sly>
+<div data-sly-resource="${@ path='topContent', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+     data-sly-repeat.child="${templatedContainer.structureResources}"
+     data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+
+<div data-sly-resource="${@ path='bottomContent', resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+<!--/* Footer */-->
+<sly data-sly-test.footerPath="${inheritedPageProperties.configPagePath}/jcr:content/root/footer">
+	<sly data-sly-use.footer="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=footerPath}">
+		<sly data-sly-test="${footer.validResource}">
+			<sly data-sly-resource="${footerPath @ wcmmode='disabled'}"></sly>
+		</sly>
+	</sly>
+</sly>

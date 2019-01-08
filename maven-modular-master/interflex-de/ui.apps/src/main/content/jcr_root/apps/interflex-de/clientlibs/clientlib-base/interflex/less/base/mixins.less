@@ -1,0 +1,90 @@
+.roboto(@size, @color, @weight: normal, @style: normal) {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: @color;
+	font-size: @size;
+	font-weight: @weight;
+	font-style: @style;
+}
+
+.inline-block {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.background-image(@url, @repeat, @position-x, @position-y) {
+	background: url(@url) @repeat @position-x @position-y;
+}
+
+.transparent-background(@color, @alpha) {
+	@rgba: rgba(red(@color), green(@color), blue(@color), @alpha);
+	@argb: argb(@rgba);
+	background-color: @rgba;
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+}
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius: @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius: @bottomleft;
+	-webkit-border-top-left-radius: @topleft;
+	-moz-border-radius-topright: @topright;
+	-moz-border-radius-bottomright: @bottomright;
+	-moz-border-radius-bottomleft: @bottomleft;
+	-moz-border-radius-topleft: @topleft;
+	border-top-right-radius: @topright;
+	border-bottom-right-radius: @bottomright;
+	border-bottom-left-radius: @bottomleft;
+	border-top-left-radius: @topleft;
+	.background-clip(padding-box);
+}
+
+.background-clip(@argument: padding-box) {
+	-moz-background-clip: @argument;
+	-webkit-background-clip: @argument;
+	background-clip: @argument;
+}
+
+// Color wrapper classes
+
+.grey-landing {
+  background-color: @interflex-grey-landing;
+}
+
+.grey-content {
+  background-color: #e6e6e7;
+}
+
+.grey-light {
+  background: @interflex-grey-light;
+}
+
+.transparent-grey {
+  .transparent-background(@interflex-grey-light, 0.3);
+}
+
+.dark-blue {
+  background: @interflex-blue;
+}
+
+.blue {
+  background-color: @interflex-background-main;
+}
+
+.blue-light {
+  background-color: @interflex-blue-light-alt;
+}
+
+.heading-blue {
+  background-color: @interflex-background;
+}
+
+.transparent-blue {
+  .transparent-background(@interflex-background-main, 0.3);
+}
+
+.blue-archive {
+  background-color: @archive-article-background;
+}
+

@@ -1,0 +1,99 @@
+/*
+  scaffolding
+*/
+@content-width: (@screen-lg * 0.9);
+
+/*
+  colors
+*/
+@interflex-background: #f2f2f2;
+@interflex-background-main: #85afd5;
+
+@interflex-blue: #005ea8;
+@interflex-blue-dark: #0c5ba5;
+@interflex-blue-extrabright: #eaf1f9;
+@interflex-blue-bright: #82c3ed;
+@interflex-blue-light: #85afd5;
+@interflex-blue-light-alt: #cedfef;
+@interflex-blue-pale: #b1cbe4;
+@interflex-blue-pale-alt: #d4deef;
+@interflex-blue-dark-pale: #6f93b3;
+@interflex-blue-ultra-light: #b6cde3;
+@interflex-border: #c2d7ea;
+
+@interflex-grey: #666666;
+@interflex-grey-light: #9d9ea0;
+@interflex-grey-alt: #c5c5c6;
+@interflex-grey-landing: #d8d8d9;
+@interflex-grey-content: #d8d8d8;
+@interflex-grey-dark-content: #b6b7b9;
+
+
+@interflex-white: #f2f2f2;
+
+@interflex-black: #1d252d;
+
+@base: @interflex-background-main;
+@base-secondary: @interflex-blue-bright;
+@html-background: @interflex-white;
+@heading-color: @interflex-blue-dark;
+@text-color: @interflex-black;
+@border-color: @interflex-border;
+@menu-color: @interflex-grey;
+@menu-color-secondary: @interflex-grey-alt;
+
+@container-padding: @grid-gutter-width;
+
+@content-max-width: 1200px;
+
+@service-link-height: 68px;
+@service-link-small-height: 32px;
+
+@contentpage-background: @interflex-grey-content;
+@contentmenu-border:  #e1e1e1;
+@contentmenu-header-background: white;
+@contentmenu-heading-background: @interflex-grey-content;
+@contentmenu-heading-background2: @interflex-grey-light;
+@contentmenu-paneltitle-color: white;
+@contentmenu-paneltitle-hover-background: @interflex-background-main;
+@contentmenu-paneltitle-background: @interflex-blue;
+@contentmenu-panelbody-color: @interflex-grey-light;
+
+@archive-article-background: #e9eef7;
+
+@sharebutton-large-height: 45px;
+@sharebutton-height: 30px;
+
+@sharebutton-socialicon-size: 21px;
+@sharebutton-socialicon-large-size: 31px;
+
+@sharebutton-label-large-size: 500px;
+@sharebutton-label-normal-size: 400px;
+
+@zindex-lightbox-overlay: 20;
+@zindex-lightbox-image: 21;
+@zindex-lightbox-elements: 22;
+
+@billboard-caption-size: 316px;
+@billboard-caption-padding: 42px;
+
+@navarea-md-height: 141px;
+@navarea-lg-height: 145px;
+
+@carousel-md-padding: 30px;
+
+// referred in /apps/allegion-web-platform/clientlibs/clientlib-sites/interflex-de/components/page/page.less
+.container-content() {
+	.container-fixed();
+
+  		@media (min-width: @screen-sm-min) {
+    		width: @container-sm;
+  		}
+  		@media (min-width: @screen-md-min) {
+    		width: @container-md;
+  		}
+  		@media (min-width: @screen-lg-min) {
+    		width: @container-lg;
+  		}
+	
+}

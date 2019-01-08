@@ -1,0 +1,223 @@
+/*
+  Main navigation for mobile
+*/
+
+.hamburger {
+  position: relative;
+  right: 10px;
+  text-align: right;
+  top: 9px;
+
+  .panel-direct-link {
+    float: right;
+
+    a {
+      padding: 10px;
+      color: @interflex-white;
+      display: inline-block;
+      float: left;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  }
+  .childpanel-direct-link{
+            float:right;
+     a {
+      padding: 10px;
+      color: #23527c;
+      display: inline-block;
+      float: left;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  .mobile-toggle {
+    background-color: white;
+    background-size: 41px;
+    border: 1px solid @interflex-grey-alt;
+    color: @interflex-black;
+    cursor: pointer;
+    height: 41px;
+    padding: 1px;
+    padding-top: 9px;
+    text-align: center;
+    text-decoration: none;
+    width: 91px;
+  }
+
+  #accordion {
+    background-color: @interflex-blue;
+    border: 0;
+    border-bottom: 5px solid @interflex-blue;
+    display: none;
+    left: auto;
+    margin-right: 16px;
+    min-width: 210px;
+    right: 0;
+    padding: 5px 5px 0 5px;
+    position: absolute;
+    top: 45px;
+    z-index: 100;
+
+    .panel {
+      border: none;
+      border-radius: 0;
+      margin-bottom: 0;
+
+      a {
+        display: block;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      .menu-item {
+        background-color: #dcdcdc;
+        border-bottom: solid 2px #808080;
+      }
+
+      .panel-heading {
+        background-color: @interflex-blue;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+
+        &:hover {
+          background-color: @interflex-background-main;
+        }
+        
+
+
+        .panel-title {
+          letter-spacing: 1px;
+          .roboto(12px, @interflex-white, 300, normal);
+          text-transform: uppercase;
+
+          a {
+            padding: 10px 15px;
+          }
+
+          a:before {
+            color: @interflex-white;
+            content: '\25B8';
+            display: inline-block;
+            float: left;
+            font-size: 12px;
+            margin-right: 5px;
+            transform: rotate(90deg);
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -webkit-transform: rotate(90deg);
+          }
+
+          a.collapsed:before {
+            content: " ";
+          }
+        }
+      }
+      .childpanel-heading {
+            background-color: white;
+             border: none;
+             border-radius: 0;
+             padding: 0;
+           &:hover {
+          background-color: @interflex-background-main;
+        }
+        .childpanel-title {
+          letter-spacing: 1px;
+          .roboto(12px, @interflex-white, 300, normal);
+          text-transform: uppercase;
+
+          a {
+            padding: 10px 15px;
+          }
+
+          a:before {
+            color: @interflex-white;
+            content: '\25B8';
+            display: inline-block;
+            float: left;
+            font-size: 12px;
+            margin-right: 5px;
+            transform: rotate(90deg);
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -webkit-transform: rotate(90deg);
+          }
+
+          a.collapsed:before {
+            content: " ";
+          }
+        }
+      }
+
+      .panel-body {
+        padding: 0;
+
+        .list-group {
+          margin-bottom: 0;
+        }
+
+        .list-group-item {
+          background-color: @interflex-white;
+          border: none;
+          border-radius: 0;
+          padding: 0 30px 0 0;
+
+          &:hover {
+            background-color: @interflex-blue-ultra-light;
+          }
+
+          a {
+            letter-spacing: 1px;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            .roboto(12px, @interflex-black, 300, normal);
+          }
+        }
+      }
+      .childpanel-body {
+        padding: 0;
+
+        .list-group {
+          margin-bottom: 0;
+        }
+
+        .listchild-group-item {
+          background-color: @interflex-white;
+          border: none;
+          border-radius: 0;
+          
+
+          &:hover {
+            background-color: @interflex-blue-ultra-light;
+          }
+
+          a {
+            letter-spacing: 1px;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            .roboto(12px, @interflex-black, 300, normal);
+          }
+        }
+      }
+      
+      
+    }
+  }
+}
+.hamburger .collapse{
+    display: none;
+    visibility: hidden;
+}
+.hamburger .collapse.in{
+    display: block;
+    visibility: visible;
+}

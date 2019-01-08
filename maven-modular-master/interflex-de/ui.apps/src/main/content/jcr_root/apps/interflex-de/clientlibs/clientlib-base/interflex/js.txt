@@ -1,0 +1,5 @@
+#base=.
+
+components/common/allegion-platform.js
+components/common/libs/stick.js
+components/common/libs/moreless.js

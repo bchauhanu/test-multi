@@ -1,0 +1,99 @@
+@contentpage-products-carousel-height: 455px;
+@contentpage-recommendations-carousel-height: 345px;
+
+.content-page {
+  #recommendations-carousel {
+    min-height: 365px;
+
+    .carousel-control > div {
+      top: 25%;
+    }
+
+    .frame {
+      min-height: @contentpage-recommendations-carousel-height;
+      max-width: 800px;
+    }
+
+    li {
+      min-height: @contentpage-recommendations-carousel-height;
+    }
+
+    .bottom-text {
+      padding: 0;
+    }
+  }
+
+  #products-carousel {
+    .frame {
+      min-height: @contentpage-products-carousel-height;
+    }
+
+    li {
+      min-height: @contentpage-products-carousel-height;
+      padding: 0 0.046%;
+      width: 0.6666%;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .carousel-control {
+      .fa-angle-left {
+        left: -65px;
+      }
+
+      .fa-angle-right {
+        right: -65px;
+      }
+    }
+
+    .product-image {
+      position: relative;
+    }
+
+    .label-icon {
+      bottom: 5px;
+      color: @interflex-background-main;
+      font-size: 18px;
+      position: absolute;
+      right: 5px;
+      top: auto;
+    }
+  }
+
+  .download-block {
+    padding-bottom: 50px;
+  }
+}
+
+.block {
+  overflow: hidden;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    .roboto(24px, @interflex-black, normal, none);
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    .roboto(24px, @interflex-black, normal, none);
+  }
+
+  .carousel-control {
+    width: 0;
+  }
+
+  .angle {
+    color: #808080;
+    position: absolute;
+  }
+}

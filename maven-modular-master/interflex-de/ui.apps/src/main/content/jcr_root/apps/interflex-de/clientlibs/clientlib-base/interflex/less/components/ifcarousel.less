@@ -1,0 +1,62 @@
+.carousel-column-wrapper {
+  margin: 0 auto;
+  max-width: @content-max-width;
+
+  .content {
+    margin-bottom: 50px;
+    padding-top: 40px;
+  }
+
+  .content.text {
+    h2 {
+      .roboto(30px, @interflex-grey-light, normal, none);
+      padding-left: 30px;
+    }
+  }
+}
+
+.column-slide-wrapper {
+  border: solid 2px @interflex-grey-landing;
+}
+
+h1.no-top-margin {
+  margin-bottom: 65px;
+  margin-top: 0;
+}
+
+.bottom-text {
+  padding: 25px 20px 15px;
+
+  h3 {
+    .roboto(24px, @heading-color, normal, none);
+  }
+
+  .caption-text .short,
+  .caption-text .long {
+    .roboto(11px, @text-color, 350, normal);
+    line-height: 1.8em;
+  }
+
+  .morelink,
+  .morelink:visited {
+    color: @interflex-grey-light;
+    text-decoration:none;
+
+    .glyphicon {
+      font-size: 16px;
+      top: 3px;
+    }
+  }
+}
+
+.if-carousel {
+  .if-button {
+    border-color: @interflex-grey-light;
+    color: @interflex-black;
+    float: right;
+
+    &:hover {
+      color: @interflex-grey-dark-content;
+    }
+  }
+}

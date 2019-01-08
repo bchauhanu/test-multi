@@ -1,0 +1,86 @@
+<style>
+
+</style>
+<!--/*Edit Mode Place Holder Text*/-->
+<div data-sly-test="${(wcmmode.edit || wcmmode.design)}" class="cq-placeholder" data-emptytext="Edit Partner Search Component"></div>
+<!--/*ClientLibrary Call*/-->
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <sly data-sly-call="${clientlib.all @ categories='components.partner-search'}"/> 
+</sly>
+
+<div class="component-partner-search" data-partner-path="${resource.path}" id="partner-search-app">
+	<div class="row blue-light find-partner">
+                        
+		<div class="col-sm-3 partner-select">			
+			<select class="form-control partner-list" data-width="auto" v-model="selCountry">
+				<option value="">${properties.selCountry || 'Select Country'}</option>
+				<option v-for="item in partnerJson.partnerweb.countries" v-bind:value="item.value">{{ item.text }}</option>
+			</select>
+		</div>
+
+		<div class="col-sm-3 partner-select">			
+			<select class="form-control partner-list" data-width="auto" v-model="selPartnerType">
+				<option value="">${properties.selPartnerType || 'Select Partner Type'}</option>
+				<option v-for="item in partnerJson.partnerweb.partnerType" v-bind:value="item.value">{{ item.text }}</option>
+			</select>
+		</div>
+
+		<div class="col-sm-3 partner-select">
+		<input class="form-control partner-list" type="text" v-model="search" v-bind:value="search" placeholder="${properties.searchText || 'Search by Title..'}"/>
+		</div>
+        <div class="col-sm-1 partner-select">
+            <button v-on:click="clearFilters" class="form-control partner-list btn-danger-text" type="button" v-model="clear" v-bind:value="clear" title="${properties.clearText || 'Clear All'}">X</button>
+		</div>
+	</div>
+
+    <div class="search-results">
+    	<section class="no-results" class="no-results" v-if="!filteredPartners.length && !errored">
+    		<p>${properties.noresults || 'No Results/Clear Filters'}</p>
+    	</section>
+        <section class="error-msg" v-if="errored">
+		    <p>${properties.errormsg || 'Error while retrieving results, Please try later'}</p>
+		</section>
+        <ul class="results-list">
+        	<li v-for="(partner,index) in filteredPartners" :partner="partner" :key="partner.id" :class="{'highlight row': index % 2 === 0, 'row': index % 2 !== 0 }">
+			   <div class="partner-data">
+			      <div class="col-sm-4 image"><img :src="partner.fileReference + '.thumb.319.319.png'" alt="partner.alt" class="cq-dd-image"></div>
+			      <div class="col-sm-8">
+			         <h4>
+			            {{partner.name}}
+			         </h4>
+			         <div class="description" v-html="partner.description">
+			         </div>
+			         <div class="contact">
+			            <strong>${'contact' @ i18n}:</strong>
+                        <div v-show="partner.contactName" class="line name">
+                           <i class="fa fa-user"></i>
+                           {{partner.contactName}}
+                        </div>
+                        <div  v-show="partner.contactAddress" class="line address">
+                           <i class="fa fa-home"></i>
+                           {{partner.contactAddress}}
+                        </div>
+                        <div v-show="partner.contactPhone" class="line phone">
+                           <i class="fa fa-phone"></i>
+                           {{partner.contactPhone}}
+                        </div>
+                        <div v-show="partner.faxNumber"  class="line phone">
+                           <i class="fa fa-print"></i>
+                           {{partner.faxNumber}}
+                        </div>
+                        <div v-show="partner.contactEmail" class="line email">
+                           <i class="fa fa-envelope"></i>
+                           {{partner.contactEmail}}
+                        </div>
+                        <div v-show="partner.contactURL"  class="line www">
+                           <i class="fa fa-globe"></i>
+                           {{partner.contactURL}}
+                        </div>
+			         </div>
+			      </div>
+			   </div>
+			</li>  
+        </ul>
+      </div>
+</div>
+

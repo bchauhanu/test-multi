@@ -1,0 +1,140 @@
+.share {
+  cursor: pointer;
+  display: inline-block;
+  height: @sharebutton-height;
+  position: relative;
+
+  &.large {
+    height: @sharebutton-large-height;
+
+    > div {
+      background-position: -465px 50%;
+      background-size: @sharebutton-label-large-size;
+    }
+
+    span {
+      font-size: 16px;
+      line-height: @sharebutton-large-height;
+      margin-left: @sharebutton-large-height;
+      width: 120px;
+    }
+
+    ul {
+      border-width: 0 1px 1px 1px;
+      height: @sharebutton-large-height;
+      padding: 6px 7px;
+      transition: top 0.5s ease-out;
+      -webkit-transition: top 0.5s ease-out;
+      -moz-transition: top 0.5s ease-out;
+      width: 100%;
+
+      &.visible {
+        left: 0;
+        top: @sharebutton-large-height;
+      }
+    }
+
+    li {
+      background-size: @sharebutton-socialicon-large-size;
+      height: @sharebutton-socialicon-large-size;
+      width: @sharebutton-socialicon-large-size;
+
+      &.facebook {
+        background-position: 0 0;
+      }
+
+      &.twitter {
+        background-position: 0 -@sharebutton-socialicon-large-size;
+      }
+
+      &.xing {
+        background-position: 0 -2 * @sharebutton-socialicon-large-size;
+      }
+
+      &.linkedin {
+        background-position: 0 -3 * @sharebutton-socialicon-large-size;
+      }
+    }
+
+    a {
+      height: @sharebutton-socialicon-large-size;
+      width: @sharebutton-socialicon-large-size;
+    }
+  }
+
+  > div {
+    background: url(img/sprite.png) no-repeat -376px 50% @interflex-blue;
+    background-size: @sharebutton-label-normal-size;
+    position: relative;
+    z-index: 1;
+  }
+
+  span {
+    border-left: 1px solid white;
+    display: block;
+    .roboto(12px, white, 300);
+    line-height: @sharebutton-height;
+    margin-left: @sharebutton-height;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+  }
+
+  ul {
+    border: solid @interflex-blue;
+    border-width: 1px 1px 1px 0;
+    cursor: auto;
+    height: @sharebutton-height;
+    left: 0;
+    overflow: hidden;
+    padding: 4px 7px;
+    position: absolute;
+    top: 0;
+    transition: left 0.5s ease-out;
+    -webkit-transition: left 0.5s ease-out;
+    -moz-transition: left 0.5s ease-out;
+    width: 100%;
+    z-index: 0;
+
+    &.visible {
+      left: 100%;
+    }
+  }
+
+  li {
+    background: url(img/social.png) no-repeat;
+    background-size: @sharebutton-socialicon-size;
+    cursor: pointer;
+    float: left;
+    .square(@sharebutton-socialicon-size);
+    list-style: none;
+    margin-left: 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.facebook {
+      background-position: 0 0;
+    }
+
+    &.twitter {
+      background-position: 0 -@sharebutton-socialicon-size;
+    }
+
+    &.xing {
+      background-position: 0 -41px;
+    }
+
+    &.linkedin {
+      background-position: 0 -3 * @sharebutton-socialicon-size;
+    }
+  }
+
+  a {
+    display: inline-block;
+    .square(@sharebutton-socialicon-size);
+    text-indent: -9999px;
+    white-space: nowrap;
+  }
+}

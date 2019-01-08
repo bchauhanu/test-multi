@@ -1,0 +1,35 @@
+.article-preview {
+  border-bottom: 1px solid black;
+  margin-bottom: 60px;
+  padding-bottom: 35px;
+
+  h2 {
+    .roboto(28px, @heading-color, normal);
+    margin-bottom: 23px;
+    margin-top: 3px;
+
+    & + .text {
+      padding-left: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 23px;
+  }
+
+  .image-caption {
+    font-size: 12px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .image {
+    margin-bottom: 30px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}

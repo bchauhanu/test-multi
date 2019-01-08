@@ -1,0 +1,230 @@
+.searchRight {
+  border-left: 1px solid #ddd;
+  float: right;
+  width: 190px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.search {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*****Search box styles****/
+.search-results .results-list {
+  list-style: none;
+  margin-top: 35px;
+  padding-left: 0;
+}
+.search-results .results-list .description {
+  line-height: 22px;
+}
+.search-results .results-list .contact {
+  margin-top: 15px;
+}
+.search-results .results-list .image {
+  margin-top: 10px;
+}
+.search-results li {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+.search-results .highlight {
+  background-color: #d4deef;
+}
+.search-results .partner li {
+  margin-bottom: 0;
+  padding: 0;
+}
+/*Search meadia queries*/
+@media (max-width: 325px) {
+  .search.searchField form input {
+    width: 96%;
+    float: left;
+  }
+  .searchRight {
+    display: none;
+  }
+  .search.searchField {
+    width: 100%;
+    padding-left: 7px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .search.searchField {
+    width: 100%;
+    padding-left: 7px;
+  }
+  .searchRight {
+    display: none;
+  }
+  /*input[type=submit]{display:none;}*/
+  .search.searchField form input {
+    width: 96%;
+    float: left;
+  }
+  .search.searchField form {
+    margin-top: 1em;
+  }
+  .search input[type=submit] {
+    display: none;
+  }
+}
+@media (min-width: 380px) and (max-width: 395px) {
+  .header-wrapper .hamburger {
+    /*top: -120px;*/
+    height: 40px;
+  }
+}
+@media (min-width: 480px) and (max-width: 480px) {
+  #search_box form {
+    /*float: right;*/
+    width: 100%;
+  }
+  /*#search_box{float: right;/*padding-top: 0px !important;}*/
+  .searchRight {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  #search_box form {
+    float: right;
+  }
+  #search_box {
+    float: right;
+  }
+  .searchRight {
+    display: none;
+  }
+  .search {
+    padding: 0 25px 6px 25px;
+  }
+}
+@media (min-width: 600px) and (max-width: 767px) {
+  #search_box form {
+    float: right;
+  }
+  #search_box {
+    top: -103px;
+    margin-left: 2em;
+  }
+  .search.searchField {
+    padding-left: 15px;
+  }
+  .search.searchField form {
+    margin-top: 4em;
+  }
+}
+@media (min-width: 768px) and (max-width: 819px) {
+  #search_box form {
+    float: right;
+  }
+  #search_box {
+    top: -72px;
+    margin-left: 15em;
+  }
+}
+@media (min-width: 820px) and (max-width: 829px) {
+  #search_box {
+    top: 3em;
+    left: 5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .search.searchField {
+    padding: 0 30px;
+  }
+  .search.searchField form {
+    margin-top: 6em;
+  }
+}
+@media (min-width: 1024px) {
+  /*.search.searchField.cq-analyzable {padding: 0 75px;}*/
+  .search.searchField form {
+    margin-top: 2em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1122px) {
+  .search.searchField {
+    padding: 0 30px;
+  }
+}
+/*end*/
+@media (max-width: 599px) {
+  #search_box {
+    float: right;
+    padding-top: 0px !important;
+  }
+}
+@media (min-width: 830px) {
+  #search_box {
+    float: right;
+    padding-top: 64px;
+  }
+  #search_box form {
+    float: right;
+  }
+}
+.search-results {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  #searchClick {
+    display: none !important;
+  }
+  #search_box {
+    padding-top: 0 !important;
+    float: left;
+    width: 80%;
+    padding: 0 0 6px 49px;
+  }
+  #search_box input {
+    width: 100% !important;
+  }
+}
+#search_box {
+  z-index: 1;
+}
+#search_box input {
+  border: 0;
+  background: #e5e5e5;
+  width: 258px;
+  height: 31px!important;
+  line-height: 31px!important;
+  color: #959595;
+  padding-left: 20px;
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#search_box .search_btn {
+  background: url('/content/dam/interflex/Icons/header/search.png') center center no-repeat #414042;
+  width: 31px;
+  height: 31px!important;
+  margin-left: -5px;
+  text-indent: -9999px;
+}
+.searchRight {
+  border-left: 1px solid #ddd;
+  float: right;
+  width: 190px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+div.searchRight p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+@media (max-width: 829px) {
+  .row.header-wrapper .col-xs-3 {
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.navigation-item-interflex {
+    display: none;
+}

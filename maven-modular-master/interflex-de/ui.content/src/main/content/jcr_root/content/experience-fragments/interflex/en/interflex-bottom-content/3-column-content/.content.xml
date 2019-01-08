@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-08-31T15:47:32.040+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/interflex/settings/wcm/templates/experience-fragment-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="3 Column Content"
+        sling:resourceType="interflex-de/components/structure/xfpage">
+        <root
+            jcr:lastModified="{Date}2016-11-22T17:31:48.669+02:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <contentcontainer
+                jcr:created="{Date}2018-08-31T15:30:17.002+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-31T15:31:01.411+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="allegion-core/components/common/contentcontainer"
+                bgColor="#F2F2F2"
+                containerName="bottom-container">
+                <par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <columnselector
+                        jcr:created="{Date}2018-08-31T15:31:07.992+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2018-08-31T15:31:19.306+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="allegion-core/components/columnselector"
+                        sectionhome="33parsys"
+                        separator="true">
+                        <left_par
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                            <imagetext
+                                jcr:created="{Date}2018-08-31T15:31:27.120+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2018-08-31T15:47:32.035+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="allegion-core/components/common/imageText"
+                                ctaexternal="_self"
+                                ctalabel="Contact"
+                                ctalink="#"
+                                fileReferenceImageIcon="/content/dam/interflex/Icons/Allgemeine_Icons/Functional_Icons_64x64/Contact.png"
+                                heading="Contact"
+                                imagealttexticon="alt for logo"
+                                imagePosition="pull-right"
+                                imageTextType="textWithIcon"
+                                text="&lt;div style=&quot;text-align: center;&quot;>Interflex Datensysteme GmbH&lt;br>&#xd;&#xa;Zettachring 16&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;70567 Stuttgart&lt;br>&#xd;&#xa;+49 711 1322 - 0&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;email: &lt;a href=&quot;mailto:interflex.info@allegion.com&quot;>interflex.info@allegion.com&lt;/a>&lt;/div>&#xd;&#xa;"
+                                textIsRich="[true,true]"/>
+                        </left_par>
+                        <center_par
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                            <imagetext_copy
+                                jcr:created="{Date}2018-08-31T15:31:27.120+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2018-08-31T15:45:25.163+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="allegion-core/components/common/imageText"
+                                ctaexternal="_self"
+                                ctalabel="More News and Events"
+                                fileReferenceImageIcon="/content/dam/interflex/Icons/Allgemeine_Icons/Functional_Icons_64x64/News.png"
+                                heading="News"
+                                imagealttexticon="alt for logo"
+                                imagePosition="pull-right"
+                                imageTextType="textWithIcon"
+                                text="&lt;p style=&quot;text-align: center;&quot;>15.08.2018&lt;br>&#xd;&#xa;For more Stadium Security&lt;br>&#xd;&#xa;&lt;br>&#xd;&#xa;05.07.2018&lt;br>&#xd;&#xa;Working together for success!&lt;/p>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>29.06.2018&lt;br>&#xd;&#xa;Germany’s TOP 100 Revealed: Interflex Named a 2018 Leader in Innovation&lt;/p>&#xd;&#xa;"
+                                textIsRich="[true,true]"/>
+                        </center_par>
+                        <right_par
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                            <imagetext_copy_copy
+                                jcr:created="{Date}2018-08-31T15:31:27.120+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2018-08-31T15:44:46.965+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="allegion-core/components/common/imageText"
+                                ctaexternal="_self"
+                                ctalabel="Subscribe"
+                                ctalink="#"
+                                fileReferenceImageIcon="/content/dam/interflex/Icons/Allgemeine_Icons/Functional_Icons_64x64/Mail.png"
+                                heading="Interflex Newsletter"
+                                imagealttexticon="alt for logo"
+                                imagePosition="pull-right"
+                                imageTextType="textWithIcon"
+                                text="&lt;div style=&quot;text-align: center;&quot;>As a subscriber of our free Interflex newsletter, you will receive the latest news from our company as well as information on our products and services on a regular basis.&lt;/div>&#xd;&#xa;"
+                                textIsRich="[true,true]"/>
+                        </right_par>
+                    </columnselector>
+                </par>
+            </contentcontainer>
+        </root>
+    </jcr:content>
+</jcr:root>

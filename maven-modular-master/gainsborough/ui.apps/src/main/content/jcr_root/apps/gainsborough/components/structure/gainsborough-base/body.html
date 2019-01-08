@@ -1,0 +1,62 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2016 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<!--/* Header */-->
+<sly data-sly-test.headerPath="${inheritedPageProperties.configPagePath}/jcr:content/root/header">
+    <sly data-sly-use.header="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=headerPath}">
+        <sly data-sly-test="${header.validResource}">
+            <sly data-sly-resource="${headerPath @ wcmmode='disabled'}"></sly>
+        </sly>
+    </sly>
+</sly>
+
+<div class="clearfix">
+    <sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+         data-sly-repeat.child="${templatedContainer.structureResources}"
+         data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+</div>
+<!--/*Gainsborough Footer */-->
+<sly data-sly-test.gainsboroughFooterPath="${inheritedPageProperties.configPagePath}/jcr:content/root/unique_identifier">
+    <sly data-sly-use.gainsboroughFooter="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=gainsboroughFooterPath}">
+        <sly data-sly-test="${gainsboroughFooter.validResource}">
+            <sly data-sly-resource="${gainsboroughFooterPath @ wcmmode='disabled'}"></sly>
+        </sly>
+    </sly>
+</sly>
+
+<!--/* Footer */-->
+<sly data-sly-test.footerPath="${inheritedPageProperties.configPagePath}/jcr:content/root/footer">
+    <sly data-sly-use.footer="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=footerPath}">
+        <sly data-sly-test="${footer.validResource}">
+            <sly data-sly-resource="${footerPath @ wcmmode='disabled'}"></sly>
+        </sly>
+    </sly>
+</sly>
+<!--/* Allegion This is Us */-->
+<sly data-sly-test.customrtePath="${inheritedPageProperties.configPagePath}/jcr:content/root/customrte">
+    <sly data-sly-use.customrte="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=customrtePath}">
+        <sly data-sly-test="${customrte.validResource}">
+            <sly data-sly-resource="${customrtePath @ wcmmode='disabled'}"></sly>
+        </sly>
+    </sly>
+</sly>
+<!--/* Disclaimer */-->
+<sly data-sly-test.disclaimerPath="${inheritedPageProperties.configPagePath}/jcr:content/root/disclaimer">
+    <sly data-sly-use.disclaimer="${'allegion.core.sling.models.ResourceValidator' @ resourcePath=disclaimerPath}">
+        <sly data-sly-test="${disclaimer.validResource}">
+            <sly data-sly-resource="${disclaimerPath @ wcmmode='disabled'}"></sly>
+        </sly>
+    </sly>
+</sly>

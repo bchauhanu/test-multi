@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/interflex/settings/wcm/templates/hero-carousel-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="interflex-de/components/structure/interflex-base">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <columnselector
+                jcr:created="{Date}2018-07-25T12:34:41.712+05:30"
+                jcr:createdBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="allegion-core/components/columnselector"
+                sectionhome="halfparsys">
+                <left_par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                </left_par>
+                <right_par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                </right_par>
+            </columnselector>
+        </root>
+        <topContent
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <carousel
+                jcr:created="{Date}2018-07-25T12:32:45.872+05:30"
+                jcr:createdBy="admin"
+                jcr:primaryType="nt:unstructured"
+                alt1="Alt for Carousel Img1"
+                alt2="Alt for Carousel Img2"
+                arrowPosition="leftandright"
+                captionStyle1="dark"
+                captionStyle2="dark"
+                goToAction1="#"
+                goToAction2="#"
+                goToText1="More Information"
+                goToText2="Interflex - About us"
+                imagePath1="/content/dam/interflex/Homepage Slider/messe_slider.jpg"
+                imagePath2="/content/dam/interflex/Homepage Slider/slider_berlin.jpg"
+                longDescription1="&lt;p>Allegion is a provider of innovative security solutions and future-oriented systems for private users and companies.&amp;nbsp;Allegion is a provider of innovative security solutions and future-oriented systems for private users and companies.&lt;/p>&#xd;&#xa;"
+                longDescription2="&lt;p>Additional Info:&amp;nbsp; Since 1976, Interflex has been developing, producing and distributing combined hardware and software systems for security solutions and workforce management.&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                numberOfSlides="2"
+                overlay1="true"
+                overlay2="true"
+                shortDescription1="&lt;p>Additional Info: Allegion is a provider of innovative security solutions and future-oriented systems for private users and companies.&lt;/p>&#xd;&#xa;"
+                shortDescription2="&lt;p>Since 1976, Interflex has been developing, producing and distributing combined hardware and software systems for security solutions and workforce management.&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true]"
+                title1="Allegion – Redefining Security"
+                title2="Interflex – Your Reliable Partner"
+                sling:resourceType="allegion-core/components/common/carousel"/>
+        </topContent>
+        <bottomContent
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            
+        </bottomContent>
+    </jcr:content>
+</jcr:root>

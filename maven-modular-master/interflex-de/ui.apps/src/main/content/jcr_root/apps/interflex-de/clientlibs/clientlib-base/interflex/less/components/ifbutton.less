@@ -1,0 +1,24 @@
+.if-button {
+  border: 1px solid @border-color;
+  border-radius: 0;
+  letter-spacing: 2px;
+  line-height: 12px;
+  padding: 14px;
+  .roboto(12px, @interflex-white, 300, normal);
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: @interflex-white;
+  }
+
+  &.white-blue {
+    background-color: white;
+    border-color: @interflex-blue;
+    color: @interflex-blue;
+    padding: 8px 9px;
+  }
+}

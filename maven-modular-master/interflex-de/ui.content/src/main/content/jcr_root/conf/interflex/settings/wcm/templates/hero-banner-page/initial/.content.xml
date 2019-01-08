@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/interflex/settings/wcm/templates/hero-banner-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="interflex-de/components/structure/interflex-base">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+        </root>
+        <topContent
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <banner
+                jcr:created="{Date}2018-07-25T12:32:45.872+05:30"
+                jcr:createdBy="admin"
+                jcr:primaryType="nt:unstructured"
+                fileReferenceHeroArea="/content/dam/interflex/Homepage Slider/messe_slider.jpg"
+                sling:resourceType="allegion-core/components/common/banner"/>
+             <breadcrumb
+                jcr:created="{Date}2018-07-25T12:32:45.872+05:30"
+                jcr:createdBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="allegion-core/components/breadcrumb/v1/breadcrumb"
+                startLevel="4"
+                showHidden="false"
+                hideCurrent="false"/>   
+        </topContent>
+    </jcr:content>
+</jcr:root>

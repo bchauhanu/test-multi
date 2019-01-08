@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="de_de"
+    jcr:mixinTypes="[cq:ReplicationStatus,mix:language]"
+    jcr:primaryType="sling:Folder">
+    <copyright
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="copyright.interflex"
+        sling:message="\u00a9 Allegion plc, 2018 | Block D, Iveagh Court, Harcourt Road, Dublin 2, Co. Dublin, Ireland &lt;br/&gt;REGISTERED IN IRELAND WITH LIMITED LIABILITY REGISTERED NUMBER 527370 "/>
+    <contact
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="contact"
+        sling:message="Kontakt"/>    
+</jcr:root>

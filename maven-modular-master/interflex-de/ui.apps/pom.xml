@@ -28,7 +28,7 @@
     </parent>
 
     <!-- ====================================================================== -->
-    <!-- P R O J E C T  D E S C R I P T I O N                                   -->
+    <!-- P R O J E C T  D E S C R I P T I O N  sss                                 -->
     <!-- ====================================================================== -->
     <artifactId>interflex.ui.apps</artifactId>
     <packaging>content-package</packaging>
